@@ -1,4 +1,4 @@
-# The Simple Shell Project
+# The Simple Shell 🐚 Project
 
 This is a project is in collaboration between Bright Mujor and Nike Oni. The shell is a simple UNIX command line interpreter that replicates functionalities of the simple shell (sh). It provides an interface between the user and the kernel and executes programs. Additionals functions are also provided.
 
@@ -71,9 +71,9 @@ pwd - Print the absolute pathname of the current working directory
 unsetenv - Remove an environment variable
 
 # Delimit and comment commands
-1. ; -  The semicolon. command separator that allows to run a command on a single line placing the semicolon between
+1. The semicolon - ;. command separator that allows to run a command on a single line placing the semicolon between
    each command.
-2. # - The command number. Allows a word beginning with # and all remaining characters on that line to be ignored.
+2. The command number - hash. Allows a word beginning with # and all remaining characters on that line to be ignored.
 
 
 # AUTHORS
