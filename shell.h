@@ -17,5 +17,6 @@ int _strcmp(char *str1, char *str2);
 int verify_path(char **arguments);
 char *_strdup(char *str);
 char *append_command(char *dir_path, char *command);
+int _printp(const char *prompt, unsigned int size)
 
 #endif
