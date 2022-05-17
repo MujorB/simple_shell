@@ -20,7 +20,7 @@ char *append_command(char *dir_path, char *command);
 int _mprint(const char *prompt, unsigned int size);
 void free_mem(char *entry);
 int getcmd_inputs(char *entry, char **arguments);
-int p_error(int n);
+int err_stat(int n);
 int _putchar(char c);
 int check_file(char *pathname);
 
