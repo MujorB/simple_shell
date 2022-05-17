@@ -17,7 +17,7 @@ int main(void)
 	{
 		if (*entry != '\n')
 		{
-			fill_args(entry, arguments);
+			getcmd_inputs(entry, arguments);
 			if (arguments[0] != NULL)
 			{
 				exist_stat = exist(arguments[0]);/**Exist evaluates if the path entered exists*/
