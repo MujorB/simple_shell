@@ -15,9 +15,9 @@ The "Simple_shell" is a program that can be compiled and launched from the comma
 5. If an executable is not found the shell prints an error message and displayu the prompt again.
 
 # Compilation
-Shell will be compiled with gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+Shell will be compiled with `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh`
 
-*Once the compilation is sucessful, you can execute the program with ./shell To exit the program,Run $ Exit.
+*Once the compilation is sucessful, you can execute the program with ./hsh, To exit the program,Run $ Exit.
 
 This simple shell supports all shell commands in the PATH environment, including, but not limited to: cat', ls`, 'w'.
 
@@ -77,4 +77,4 @@ unsetenv - Remove an environment variable
 
 
 # AUTHORS
-This file contains the details of all the individuals that contributed to this shell project
+The `AUTHORS` file contains the details of all the individuals that contributed to this shell project
