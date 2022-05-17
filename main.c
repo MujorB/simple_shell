@@ -11,7 +11,7 @@ int main(void)
 	char *entry = NULL, *arguments[20]; /**String of args that enters the usr*/
 	int counter = 1, vf_stat = 0, exist_stat = 0, exit_stat = 0, blt_stat = 0;
 
-	_printp("$ ", 2);/**prompt mini-shell*/
+	_mprint("$ ", 2);/**prompt mini-shell*/
 	bytes_rd = getline(&entry, &bf_size, stdin); /**sizeof entry, o -1 (EOF))*/
 	while (bytes_rd != -1)
 	{
@@ -42,8 +42,8 @@ int main(void)
 		else if (*entry == '\n')
 			free(entry);
 		entry = NULL, counter++;
-		_printp("$ ", 2), bytes_rd = getline(&entry, &bf_size, stdin);
+		_mprint("$ ", 2), bytes_rd = getline(&entry, &bf_size, stdin);
 	}
-	last_free(entry);
+	free_mem(entry);
 	return (exit_stat);
 }
