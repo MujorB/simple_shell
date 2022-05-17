@@ -28,9 +28,9 @@ int main(void)
 						exit_stat = exec(arguments), free(entry), free(*arguments);
 					else
 					{
-					blt_stat = verify_blt(arguments, exit_stat);
-					if (blt_stat != 0)
-						exit_stat = p_error(arguments, counter), free(entry);
+						blt_stat = getbuiltins(arguments, exit_stat);
+						if (blt_stat != 0)
+							exit_stat = p_error(arguments, counter), free(entry);
 					}
 				}
 				else /**Found the file*/
