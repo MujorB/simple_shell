@@ -24,5 +24,7 @@ int err_stat(int n);
 int p_error(char **arguments, int counter);
 int _putchar(char c);
 int check_file(char *pathname);
+int execute(char **arguments);
+char *_strdup(char *str);
 
 #endif
