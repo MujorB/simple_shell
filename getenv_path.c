@@ -1,10 +1,12 @@
 #include "shell.h"
 /**
- * verify_path - Verify if the first command can be executed
+ * get_path - Evaluates if the first argument is a command
+ * whose path can be executed.
  * @arguments: Array of entries by the user
+ *
  * Return: 0 if success, or -1 if the exe file doesn't exist
  */
-int verify_path(char **arguments)
+int get_path(char **arguments)
 {
 	char *global_path = NULL; /**"/usr/bin:/bin:/usr/games:/usr/local/games"*/
 	char *global_dup = NULL;
