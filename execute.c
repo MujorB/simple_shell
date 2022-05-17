@@ -1,11 +1,11 @@
 #include "shell.h"
 /**
- * execute - Creation of new child process, executes and wait for the child process
- * to update the status
+ * execute - Creation of new child process, executes and
+ * waits for the child process to update the status
  * @arguments:Input array
  * Return: 0 if success
  */
-int exec(char **arguments)
+int execute(char **arguments)
 {
 	pid_t pid = 0;/**Child process id*/
 	int stat = 0, exe_stat = 0;/**indicates the status of the child process*/

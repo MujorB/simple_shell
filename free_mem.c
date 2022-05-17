@@ -7,7 +7,7 @@ void free_mem(char *entry)
 {
 	if (isatty(STDIN_FILENO))
 	{
-		putchar('\n');
+		_putchar('\n');
 		free(entry);
 	}
 	if (!isatty(STDIN_FILENO))
