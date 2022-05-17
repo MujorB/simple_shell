@@ -20,7 +20,7 @@ int main(void)
 			getcmd_inputs(entry, arguments);
 			if (arguments[0] != NULL)
 			{
-				exist_stat = exist(arguments[0]);/**Exist evaluates if the path entered exists*/
+				exist_stat = exist(arguments[0]);/**Exist checks if the path entered exists*/
 				if (exist_stat != 0)/**Did not find the file*/
 				{
 					vf_stat = verify_path(arguments);
@@ -30,7 +30,7 @@ int main(void)
 					{
 					blt_stat = verify_blt(arguments, exit_stat);
 					if (blt_stat != 0)
-						exit_stat = print_not_found(arguments, counter), free(entry);
+						exit_stat = p_error(arguments, counter), free(entry);
 					}
 				}
 				else /**Found the file*/
