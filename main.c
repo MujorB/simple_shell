@@ -23,7 +23,7 @@ int main(void)
 				exist_stat = exist(arguments[0]);/**Exist checks if the path entered exists*/
 				if (exist_stat != 0)/**Did not find the file*/
 				{
-					vf_stat = verify_path(arguments);
+					vf_stat = get_path(arguments);
 					if (vf_stat == 0)
 						exit_stat = exec(arguments), free(entry), free(*arguments);
 					else
