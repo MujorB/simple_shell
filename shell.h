@@ -21,5 +21,6 @@ int _mprint(const char *prompt, unsigned int size);
 void free_mem(char *entry);
 int getcmd_inputs(char *entry, char **arguments);
 int _putchar(char c);
+int check_file(char *pathname);
 
 #endif
