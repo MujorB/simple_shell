@@ -1,6 +1,6 @@
 # The Simple Shell 🐚 Project
 
-This is a project is in collaboration between Bright Mujor and Nike Oni. The shell is a simple UNIX command line interpreter that replicates functionalities of the simple shell (sh). It provides an interface between the user and the kernel and executes programs. Additionals functions are also provided.
+This is a project is in collaboration between **Bright Mujor** and **Nike Oni**. The shell is a simple UNIX command line interpreter that replicates functionalities of the simple shell (sh). It provides an interface between the user and the kernel and executes programs. Additionals functions are also provided.
 
 # Description
 
@@ -17,35 +17,35 @@ The "Simple_shell" is a program that can be compiled and launched from the comma
 # Compilation
 Shell will be compiled with `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh`
 
-*Once the compilation is sucessful, you can execute the program with ./hsh, To exit the program,Run $ Exit.
+*Once the compilation is sucessful, you can execute the program with `./hsh`, To exit the program,Run $ `Exit`.
 
-This simple shell supports all shell commands in the PATH environment, including, but not limited to: cat', ls`, 'w'.
+This simple shell supports all shell commands in the PATH environment, including, but not limited to: `cat', `ls`, 'w'.
 
 This will compile all the '.c' files and change the output's name to 'hsh'.
 
 # Testing  🔨
 *Shell will work in interactive mode in the format below:
 
-$ ./hsh
+$ `./hsh`
 ($) /bin/ls
 hsh main.c shell.c
 ($)
-($) exit
+($) `exit`
 $
 
-* ./hsh and then type the commands that you want to execute
+* `./hsh` and then type the commands that you want to execute
 * You can type a command and the prompt appear show again
 
 ** Also in non-interactive mode:
 
-$ echo "/bin/ls" | ./hsh
+$  `echo "/bin/ls" | ./hsh`
 hsh main.c shell.c test_ls_2
 $
-$ cat test_ls_2
+$ `cat test_ls_2`
 /bin/ls
 /bin/ls
 $
-$ cat test_ls_2 | ./hsh
+$ `cat test_ls_2 | ./hsh`
 hsh main.c shell.c test_ls_2
 hsh main.c shell.c test_ls_2
 $
