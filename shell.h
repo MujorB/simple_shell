@@ -15,6 +15,7 @@ extern char **environ;
 
 int _strcmp(char *str1, char *str2);
 int get_path(char **arguments);
+int getbuiltins(char **arguments, int exit_stat)
 char *_strdup(char *str);
 char *append_command(char *dir_path, char *command);
 int _mprint(const char *prompt, unsigned int size);
