@@ -2,7 +2,7 @@
 
 This is a project is in collaboration between Bright Mujor and Nike Oni. The shell is a simple UNIX command line interpreter that replicates functionalities of the simple shell (sh). It provides an interface between the user and the kernel and executes programs. Additionals functions are also provided.
 
-# Description 
+# Description
 
 The "Simple_shell" is a program that can be compiled and launched from the command line, where its main function is to execute commands read from the standard input. It contains some of the basic features and functions found in the various shell programs like Kernel commands and builtin commands.
 
@@ -11,7 +11,7 @@ The "Simple_shell" is a program that can be compiled and launched from the comma
 1. DIsplay a prompt and wait for the user to type a command. A command-line always ends with a new line.
 2. The prompt is displayed again each time a command has been executed.
 3. The command lines are simple, no semicolons, no pipes, no redirections, or any other advanced features.
-4.  The command lines are made only of one word.No arguement will be passed to the programs. 
+4. The command lines are made only of one word.No arguement will be passed to the programs.
 5. If an executable is not found the shell prints an error message and displayu the prompt again.
 
 # Compilation
@@ -78,5 +78,3 @@ unsetenv - Remove an environment variable
 
 # AUTHORS
 This file contains the details of all the individuals that contributed to this shell project
-
-
