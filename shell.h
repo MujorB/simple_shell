@@ -15,7 +15,8 @@ extern char **environ;
 
 int _strcmp(char *str1, char *str2);
 int get_path(char **arguments);
-int getbuiltins(char **arguments, int exit_stat)
+int getbuiltins(char **arguments, int exit_stat);
+char *_getenv(char *global_var);
 char *_strdup(char *str);
 char *append_command(char *dir_path, char *command);
 int _mprint(const char *prompt, unsigned int size);
@@ -26,6 +27,7 @@ int p_error(char **arguments, int counter);
 int _putchar(char c);
 int check_file(char *pathname);
 int execute(char **arguments);
-char *_strdup(char *str);
+void free_grid(char **grid, int heigth);
+int _strlen(const char *str);
 
 #endif

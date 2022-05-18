@@ -20,12 +20,12 @@ int main(void)
 			getcmd_inputs(entry, arguments);
 			if (arguments[0] != NULL)
 			{
-				exist_stat = exist(arguments[0]);/**Exist checks if the path entered exists*/
+				exist_stat = check_file(arguments[0]);/**Exist checks if the path entered exists*/
 				if (exist_stat != 0)/**Did not find the file*/
 				{
 					vf_stat = get_path(arguments);
 					if (vf_stat == 0)
-						exit_stat = exec(arguments), free(entry), free(*arguments);
+						exit_stat = execute(arguments), free(entry), free(*arguments);
 					else
 					{
 						blt_stat = getbuiltins(arguments, exit_stat);
@@ -34,7 +34,7 @@ int main(void)
 					}
 				}
 				else /**Found the file*/
-					exit_stat = exec(arguments), free(entry);
+					exit_stat = execute(arguments), free(entry);
 			}
 			else
 				free(entry);

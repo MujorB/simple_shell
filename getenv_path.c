@@ -27,7 +27,7 @@ int get_path(char **arguments)
 	{
 		command_path = append_command(dir_path, arguments[0]);
 		test_cph[i] = command_path;
-		exist_stat = exist(test_cph[i]);
+		exist_stat = check_file(test_cph[i]);
 		dir_path = strtok(NULL, ":");
 		i++;
 	}
