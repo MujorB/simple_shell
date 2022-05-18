@@ -31,7 +31,7 @@ The simple shell is a program that takes commands from the keyboard and gives th
 that the interpretative language is common to both interactive and non-interactive use (shell scripts).  That is, commands can be typed directly to the running shell or can be put into a file and the file can be executed directly by the shell.
 
 .SH RETURN VALUE
-The shell returns the error code given by the last completed command followed by either ctrl-d or exit with no status code. 
+The shell returns the error code given by the last completed command followed by either ctrl-d or exit with no status code.
 .SH SYNTAX
 .SS
 .B INVOCATION
@@ -45,7 +45,7 @@ and wait for the user to input a command, that will be executed by execve().
 .PP
 .RS
 .I [command_name][flags or option_name][argument ...]
-The commands are run with user-interaction from keyboard. 
+The commands are run with user-interaction from keyboard.
 E.g. the shell can prompt the user to enter input.
 .PP
 .RE
@@ -97,10 +97,10 @@ A few of the commands that can be executed in the simple_shell, are included in 
 .sp
 .B Path search
 .RS
-The way Simple Shell works is that when it receives input from the command line, it searches for a shell function by that name. If it doesn't find it, it searches for a builtin by that name.	 If it's not a builtin, and the command is the full name of an executable, like /bin/ls, it will be executed. If the command doesn't include its full path, and the PATH environment variable has not been altered, then Simple Shell searches in the PATH for the command and its directory. 
+The way Simple Shell works is that when it receives input from the command line, it searches for a shell function by that name. If it doesn't find it, it searches for a builtin by that name.	 If it's not a builtin, and the command is the full name of an executable, like /bin/ls, it will be executed. If the command doesn't include its full path, and the PATH environment variable has not been altered, then Simple Shell searches in the PATH for the command and its directory.
 .PP
-PATH is a colon-separated list of directories containing the executable programs corresponding to the commands. If PATH has been altered, or emptied, Simple Shell will first look in the current working directory to see if the command corresponds to an executable. If it finds it there, this executable will be executed, if not, it will go through the PATH to try to find the full path of the command. 
-.RE
+PATH is a colon-separated list of directories containing the executable programs corresponding to the commands. If PATH has been altered, or emptied, Simple Shell will first look in the current working directory to see if the command corresponds to an executable. If it finds it there, this executable will be executed, if not, it will go through the PATH to try to find the full path of the command.
+.R
 
 
 .SH BUILTINS
@@ -171,11 +171,11 @@ aborted.  Otherwise the shell will return the exit status of the last command ex
 
 .PP
 .SH NOTES
-Simple Shell is entirely coded in the C programming language. It does not entirely replicate the real shell, as some builtins and features are missing. Simple Shell only takes one command at a time for now.   
+Simple Shell is entirely coded in the C programming language. It does not entirely replicate the real shell, as some builtins and features are missing. Simple Shell only takes one command at a time for now.
 .SH BUGS
 No known bugs.
 
 .SH AUTHOR
-Bright Mujor  
+Bright Mujor
 Nike Oni
 
