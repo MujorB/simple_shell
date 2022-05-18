@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * getbuiltins - Evaluates if user's command arguments are 
+ * getbuiltins - Evaluates if user's command arguments are
  * amongst inbuilts command.
  * @arguments: Pointer to the array of command  arguments
  * @exit_stat: Current exit status

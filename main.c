@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * main - Entry point for the simple shell project created 
+ * main - Entry point for the simple shell project created
  * for ALX sprint one final Project.
  * Return: 0 on success
  */
@@ -20,7 +20,7 @@ int main(void)
 			getcmd_inputs(entry, arguments);
 			if (arguments[0] != NULL)
 			{
-				exist_stat = check_file(arguments[0]);/**Exist checks if the path entered exists*/
+				exist_stat = check_file(arguments[0]);/*checks if the path entered exists*/
 				if (exist_stat != 0)/**Did not find the file*/
 				{
 					vf_stat = get_path(arguments);
@@ -28,9 +28,9 @@ int main(void)
 						exit_stat = execute(arguments), free(entry), free(*arguments);
 					else
 					{
-						blt_stat = getbuiltins(arguments, exit_stat);
-						if (blt_stat != 0)
-							exit_stat = p_error(arguments, counter), free(entry);
+					blt_stat = getbuiltins(arguments, exit_stat);
+					if (blt_stat != 0)
+						exit_stat = p_error(arguments, counter), free(entry);
 					}
 				}
 				else /**Found the file*/
